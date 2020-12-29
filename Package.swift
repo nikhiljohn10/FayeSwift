@@ -7,9 +7,9 @@ let package = Package(
         .library(name: "FayeSwift", targets: ["FayeSwift"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.0")
+        .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.4")
     ],
     targets: [
-        .target(name: "FayeSwift", dependencies: [._byNameItem(name: "Starscream")], path: "Sources")
+        .target(name: "FayeSwift", dependencies: ["Starscream"], path: "Sources")
     ]
 )
